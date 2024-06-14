@@ -1,19 +1,19 @@
 import Image from "next/image";
-import wife from "../../public/img/bocchi my wife.jpg";
+import wife from "@/img/bocchi my wife.jpg";
+import btr from "@/img/5axsuemr1a6b1.webp";
 
 export default function Home() {
 	return (
-		<main className="h-lvh">
-			<section className="flex flex-col grow h-full justify-center items-center">
-				<span>
-					Men will take literally one look at this and say &#34;wife!!!&#34;
-				</span>
-				<Image
-					className="object-scale-down h-1/2"
-					alt="cute gril bocchi"
-					src={wife}
-				/>
-			</section>
-		</main>
+		<section className="flex flex-col grow basis-0 items-center">
+			<span>
+				Men will take literally one look at this and say &#34;wife!!!&#34;
+			</span>
+			<Image
+				className="object-scale-down w-1/2"
+				alt="cute gril bocchi"
+				src={wife}
+			/>
+			<Image className="object-scale-down w-1/2" alt="btr" src={btr} />
+		</section>
 	);
 }
