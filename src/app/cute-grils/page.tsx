@@ -3,7 +3,7 @@ import { waifus } from "../api/waifus";
 import Image from "next/image";
 
 export default async function page() {
-	const manyGrils = await waifus.getImages("sfw", "dance");
+	const manyGrils = await waifus.getImages("sfw", "awoo");
 	console.log(manyGrils);
 
 	return (
