@@ -1,4 +1,5 @@
 import { put } from "@vercel/blob";
+import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 
 export async function POST(request: Request): Promise<NextResponse> {
@@ -14,8 +15,8 @@ export async function POST(request: Request): Promise<NextResponse> {
 
 	const blob = await put(filename, request.body, {
 		access: "public",
-		// cacheControlMaxAge: 5,
 	});
 
+	revalidatePath("/");
 	return NextResponse.json(blob);
 }
