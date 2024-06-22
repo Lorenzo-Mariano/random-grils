@@ -10,11 +10,13 @@ export default async function NavBar() {
 			<section className="flex flex-col grow gap-4 justify-between bg-neutral-950 rounded-lg overflow-y-clip">
 				<div className="flex flex-col p-4 pb-0 gap-2">
 					<span className="text-xl font-semibold">random NEXT thing</span>
-					<Link href={"/"}>poecket monsters pics (real)</Link>
+					<Link href={"/"}>GRIL REPOSIRTORY</Link>
+					<Link href={"/pookiemon"}>poecket monsters pics (real)</Link>
 					<Link href={"/cute-grils"}>CUTE ANIME GRIL PICS</Link>
 					<Link href={"/shite"}>
 						random unrelated products not used for nefarious purposes
 					</Link>
+					<Link href={"/upload-gril"}>upload gril???!!!</Link>
 					<Link href={"/cooking"}>Let me cook!!!</Link>
 				</div>
 
