@@ -9,21 +9,21 @@ export default async function page() {
 	return (
 		<>
 			<span>cute grils repo</span>
-			<ul className="flex flex-col gap-2">
+			<div className="flex flex-row flex-wrap gap-2 justify-center">
 				{manyGrils &&
 					manyGrils.files.map((url) => {
 						return (
-							<li key={randomUUID()}>
+							<div key={randomUUID()}>
 								<Image
 									src={url.toString()}
 									alt={"cute gril"}
 									height={300}
 									width={450}
 								/>
-							</li>
+							</div>
 						);
 					})}
-			</ul>
+			</div>
 		</>
 	);
 }
